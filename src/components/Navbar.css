@@ -1,0 +1,15 @@
+.navbar_options {
+  color: #9ba4b4;
+  cursor: pointer;
+  /* background-color: #0004; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-inline: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.navbar_options :hover {
+  transform: scale(1.2);
+  background-color: #ff0;
+}
