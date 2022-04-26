@@ -1,0 +1,62 @@
+.photos_modal_container {
+	height: 90vh;
+	width: 60vw;
+	min-width: 400px;
+	display: inline-block;
+	flex-direction: column;
+	background-image: radial-gradient(#2a3951, #1a2941, #0a1931);
+	transition: 500ms;
+	border-radius: 20px;
+	padding: 10px;
+	overflow-y: scroll;
+	z-index: 70;
+	/* position: fixed;
+	top: 0px;
+	left: 0px; */
+}
+
+.photos {
+	height: calc((100vw / 5) - 30px);
+	object-fit: cover;
+	margin: 10px;
+	width: calc((100vw / 5) - 30px);
+	display: inline-block;
+	border-radius: 10px;
+	transition: 200ms;
+}
+
+.photos:hover {
+	transform: scale(1.05);
+	box-shadow: 10px 10px 10px #000;
+}
+
+.backdrop {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+	z-index: 100;
+	position: fixed;
+	transition: 500ms;
+	/* animation-name: fadeIn;
+	animation-duration: 200ms; */
+}
+
+.full_photo {
+	animation-name: fadeIn;
+	animation-duration: 200ms;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		/* transform: scale(0); */
+	}
+	100% {
+		opacity: 1;
+		/* transform: scale(1); */
+	}
+}

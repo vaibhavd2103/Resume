@@ -1,0 +1,32 @@
+.skill_image {
+	transition: all 250ms ease-in;
+}
+
+.skill_image:hover {
+	/* transform: scale(1.1); */
+	animation-name: spring;
+	animation-duration: 1s;
+}
+
+@keyframes spring {
+	0% {
+		opacity: 1;
+		/* transform: rotate(0deg); */
+	}
+	20% {
+		opacity: 1;
+		transform: rotate(30deg);
+	}
+	60% {
+		opacity: 1;
+		transform: rotate(-15deg);
+	}
+	/* 80% {
+		opacity: 1;
+		transform: rotate(-10deg);
+	} */
+	100% {
+		opacity: 1;
+		transform: rotate(0deg);
+	}
+}

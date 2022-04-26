@@ -1,0 +1,27 @@
+.hello_image {
+	height: 50px;
+	width: 50px;
+	position: relative;
+	bottom: 7px;
+	animation: wave infinite;
+	animation-duration: 2s;
+	/* animation-delay: 1s; */
+}
+
+@keyframes wave {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(30deg);
+	}
+	50% {
+		transform: rotate(-20deg);
+	}
+	80% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
